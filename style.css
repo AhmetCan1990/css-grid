@@ -4,40 +4,35 @@
 }
 .container {
   display: grid;
-  grid-template-rows: 4fr 9fr 5fr 3fr;
-  gap: 15px;
-  height: 100vh;
-  padding: 10px;
+  grid-template: 2fr 4fr 7fr 2fr / repeat(3, 3fr) 2fr;
+  gap: 2rem;
+  width: 60vw;
+  height: 200vh;
+  margin: 2rem auto;
   color: white;
+  font-size: 1.5rem;
 }
 .container div {
   background-color: #2196f3;
-  padding: 1rem;
+  padding: 2rem;
 }
 .header,
 .footer {
-  grid-column-start: 1;
-  grid-column-end: 13;
+  grid-column: 1/12;
 }
 .smallbox1 {
-  grid-column-start: 1;
-  grid-column-end: 4;
+  grid-column: 1/4;
 }
 .smallbox2 {
-  grid-column-start: 4;
-  grid-column-end: 7;
+  grid-column: 4/7;
 }
 .smallbox3 {
-  grid-column-start: 7;
-  grid-column-end: 10;
+  grid-column: 7/10;
 }
 .sidebar {
-  grid-column-start: 10;
-  grid-column-end: 13;
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-column: 10/12;
+  grid-row: 2/4;
 }
 .maincontent {
-  grid-column-start: 1;
-  grid-column-end: 10;
+  grid-column: 1/10;
 }
